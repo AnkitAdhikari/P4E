@@ -1,2 +1,2 @@
 # P4E
-This repo contains python code that wrote while learing python from P4E
+This repo contains python code that I wrote while learning python from P4E
