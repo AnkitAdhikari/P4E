@@ -47,3 +47,46 @@ print(
 )  # True 2nd expression statisfies that 9 is completely divisible by 3
 
 print("Opposite of 20 > 10 is", not (20 > 10))  # False not negets the result
+
+# conditional execution
+x = 2
+y= 2
+
+# if statement
+if x>0:
+    print('x is positive')
+
+
+# if else statement
+if x % 2 == 0:
+    print("Even number")
+else:
+    print("ODD number")
+
+# chained condition
+
+if x < y:
+    print('X is less than y')
+elif x > y:
+    print("X is greater than Y")
+else:
+    print("X and Y are equal")
+
+# nested conditinals
+
+if x == y:
+    print('X and Y are equal')
+else:
+    if x > y:
+        print("X is greater than Y")
+    else:
+        print("X is less than Y")
+
+# catching exceptions using try and catch
+inp = input("Enter Fahrenheit Temperature")
+try:
+    fahr = float(inp)
+    cel = (fahr - 32.0)*5.0/9.0
+    print(cel)
+except:
+    print("Please enter a number")
