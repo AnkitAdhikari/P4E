@@ -81,3 +81,17 @@ print(line.strip())
 # startswith method
 line = "Have a nice day"
 print(line.lower().startswith("h"))
+
+# formatted string literals
+
+camels = 42
+
+print(f"I have spotted {camels} camels")
+
+# a bit more complex example
+
+years = 3
+count = 2
+species = "camels"
+
+print(f"In {years} years I have spotted {count} {species}")
