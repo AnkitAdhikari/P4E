@@ -23,3 +23,18 @@ for line in fromFileHandler:
     if line.find("@uct.ac.za") == -1:
         continue
     print(line.rstrip())
+
+# asking file name from user and handeling exception with try except
+    
+fname = input("Enter file name: ")
+
+try:
+    open_file = open(fname)
+except:
+    print("Error opening file: ",fname)
+    exit()
+count = 0
+for line in open_file:
+    count = count + 1
+
+print(f'''Total line in {fname} is {count}''')
