@@ -23,3 +23,33 @@ for line in fromFileHandler:
     if line.find("@uct.ac.za") == -1:
         continue
     print(line.rstrip())
+
+# asking file name from user and handeling exception with try except
+    
+fname = input("Enter file name: ")
+
+try:
+    open_file = open(fname)
+except:
+    print("Error opening file: ",fname)
+    exit()
+count = 0
+for line in open_file:
+    count = count + 1
+
+print(f'''Total line in {fname} is {count}''')
+
+# writing files
+
+fout = open('output.txt','w')
+
+line = input("Enter a message for to be written in a file: ")
+
+fout.write(line)
+
+fout.write("\nThis is the line line added.") # .write method doesn't add a new line after writing to a file we need to manually take care of that
+
+print("Write operation sucessfully compeleted")
+
+#closing filehandler
+fout.close()
